@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ankush Yadav | Web Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      color: #fff;
+      border-radius: 10px;
+      padding: 4rem 2rem;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-content h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background: #00bcd4;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0097a7;
+    }
+
+    .hero-image img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .projects, .skills, .about, .contact {
+      background: #fff;
+      margin-top: 2rem;
+      border-radius: 10px;
+      padding: 3rem 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: #f0f0f0;
+      padding: 1rem;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-card a {
+      text-decoration: none;
+      color: #00bcd4;
+      font-weight: bold;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .skills li {
+      background: #4ca1af;
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 20px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .contact p {
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+
+    .contact a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-image {
+        margin-top: 2rem;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Ankush Yadav</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm Ankush Yadav</h2>
+      <p>A passionate Web Developer with a background in Computer Science Engineering. I create fast, responsive, and elegant web solutions.</p>
+      <a href="#contact" class="btn">Let's Connect</a>
+    </div>
+    <div class="hero-image">
+      <img src="your-photo.jpg" alt="Ankush Yadav Photo">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A clean and responsive portfolio built using HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/yourusername/portfolio" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>Real-time weather forecast app using OpenWeatherMap API and vanilla JS.</p>
+        <a href="https://your-weather-app-link.com" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Blog CMS</h3>
+        <p>A full-stack blog platform using Node.js, Express, and MongoDB.</p>
+        <a href="https://github.com/yourusername/blog-cms" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2 class="section-title">Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>React.js</li>
+      <li>Node.js</li>
+      <li>MongoDB</li>
+      <li>Git & GitHub</li>
+      <li>REST APIs</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I’m Ankush Yadav, a dedicated Web Developer with a strong foundation in Computer Science Engineering. I specialize in building responsive, scalable, and intuitive web applications. I enjoy solving real-world problems using clean and efficient code. I thrive in collaborative environments and am always eager to learn the latest technologies to enhance my craft.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:ankushyadav@example.com">ankushyadav@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></p>
+    <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ankush Yadav. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
